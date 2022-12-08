@@ -1,0 +1,7 @@
+.mainbgimg {
+    background: linear-gradient(to right, rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)),
+        url('../../assets/img/bg_header.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
