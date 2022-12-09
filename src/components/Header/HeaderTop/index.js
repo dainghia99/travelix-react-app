@@ -1,6 +1,7 @@
 import { MdFacebook } from 'react-icons/md';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTwitter } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function HeaderTop() {
     return (
@@ -15,9 +16,13 @@ function HeaderTop() {
                     </div>
                 </div>
                 <div before="" className="flex items-center text-white text-sm gap-5">
-                    <p className="cursor-pointer hover:text-orange-400">Đăng Nhập</p>
+                    <Link to={'/login'}>
+                        <p className="cursor-pointer hover:text-orange-400">Đăng Nhập</p>
+                    </Link>
                     <div className="w-[1px] h-[20px] bg-slate-400"></div>
-                    <p className="cursor-pointer hover:text-orange-400">Đăng Ký</p>
+                    <Link to={'/register'}>
+                        <p className="cursor-pointer hover:text-orange-400">Đăng Ký</p>
+                    </Link>
                 </div>
             </div>
         </div>
